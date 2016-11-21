@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Hamming</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="hamming.js" ></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head> 
+<body>
+    <h1>Hamming Encoding and Decoding</h1>
+    <div id="encoding">
+        <p>Enter data for encoding:</p>
+        <textarea id="encode" width=100></textarea>
+        <input type="submit" onclick="showEncode()">
+    </div>
+    <div id="decoding">
+        <p>Enter data for encoding:</p>
+        <textarea id="decode"></textarea>
+        <input type="submit" onclick="showDecode()">
+    </div>
+    <script lang='javascript'>
+        function showEncode(){
+            document.getElementById("decode").value = encode(document.getElementById("encode").value);
+        }
+        function showDecode(){
+            document.getElementById("encode").value = decode(document.getElementById("decode").value);
+        }
+    </script>
+</body>
+</html>
