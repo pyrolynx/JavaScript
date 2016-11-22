@@ -151,5 +151,5 @@ number = parseFloat(WSH.stdin.readLine().replace(',', '.'))
 // b = binarySplit(getFilledArray(4, 0), number2)
 // WSH.Echo(binaryAdd(a,b))
 // parser = new XFloat(1);
-s = new XFloat(number).
+s = new XFloat(number)
 // WSH.Echo(binarySplit(getEmptyArray(7), num))
